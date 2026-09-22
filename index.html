@@ -27,7 +27,7 @@
 
 <h1>Baseline — Πολιτική Απορρήτου</h1>
 <div class="rule"></div>
-<p class="meta">Τελευταία ενημέρωση: 19 Σεπτεμβρίου 2026</p>
+<p class="meta">Τελευταία ενημέρωση: 22 Σεπτεμβρίου 2026</p>
 
 <p>Η Baseline είναι εφαρμογή καταγραφής διατροφής. Αυτή η σελίδα εξηγεί τι
 δεδομένα κρατάει, πού πηγαίνουν και πώς τα σβήνεις. Δεν υπάρχουν διαφημίσεις,
@@ -56,10 +56,14 @@
 <h2>Λειτουργίες τεχνητής νοημοσύνης</h2>
 <p>Όταν γράφεις ένα γεύμα με ελεύθερο κείμενο, αυτό το κείμενο στέλνεται στην
 <a href="https://www.anthropic.com/legal/privacy">Anthropic</a> (μοντέλο Claude)
-για να μετατραπεί σε τρόφιμα και ποσότητες. Στέλνεται μόνο το κείμενο του
-γεύματος — όχι το email, το βάρος ή το ιστορικό σου. Η Anthropic δεν
-χρησιμοποιεί αυτά τα δεδομένα για εκπαίδευση μοντέλων. Αν δεν χρησιμοποιήσεις
-αυτή τη λειτουργία, δεν φεύγει τίποτα προς τα εκεί.</p>
+για να μετατραπεί σε τρόφιμα και ποσότητες. Μαζί με το κείμενο στέλνονται, για
+να είναι σωστή η εκτίμηση: το προφίλ σου (φύλο, ηλικία, ύψος, βάρος, στόχος), τα
+σημερινά γεύματα και τα τρόφιμα που έχεις καταγράψει τις τελευταίες 30 ημέρες,
+ώστε ένα τρόφιμο που έχεις ήδη γράψει να παίρνει τις δικές σου τιμές. <strong>Δεν
+στέλνεται το email σου</strong> ούτε κάποιο αναγνωριστικό που σε ταυτοποιεί. Η
+Anthropic δεν χρησιμοποιεί αυτά τα δεδομένα για εκπαίδευση μοντέλων. Αν δεν
+χρησιμοποιήσεις αυτή τη λειτουργία, δεν φεύγει τίποτα προς τα εκεί. Για το
+ημερήσιο όριο χρήσης κρατιέται μόνο ένας μετρητής αιτημάτων ανά ημέρα.</p>
 
 <h2>Αναζήτηση τροφίμων</h2>
 <p>Η αναζήτηση σε βάσεις τροφίμων στέλνει μόνο τον όρο αναζήτησης (π.χ.
@@ -71,14 +75,22 @@
 <p>Όσο έχεις λογαριασμό. Κάθε φορά που αποθηκεύεται νέα έκδοση, κρατιούνται οι
 50 προηγούμενες, ώστε να μπορεί να αναιρεθεί μια λάθος συγχώνευση.</p>
 
-<h2>Πώς τα σβήνεις</h2>
-<ul>
-  <li><strong>Από τη συσκευή:</strong> ΡΥΘΜΙΣΕΙΣ → ΜΗΔΕΝΙΣΜΟΣ.</li>
-  <li><strong>Από το σύννεφο:</strong> στείλε email στη διεύθυνση πιο κάτω με θέμα
-      «Διαγραφή λογαριασμού». Ο λογαριασμός και όλα τα αντίγραφα διαγράφονται
-      εντός 30 ημερών.</li>
-  <li><strong>Αντίγραφο πριν τη διαγραφή:</strong> ΡΥΘΜΙΣΕΙΣ → ΕΞΑΓΩΓΗ JSON.</li>
-</ul>
+<h2 id="delete">Διαγραφή λογαριασμού και δεδομένων</h2>
+<p><strong>Μέσα από την εφαρμογή (άμεσα):</strong></p>
+<ol>
+  <li>ΡΥΘΜΙΣΕΙΣ → ΣΥΓΧΡΟΝΙΣΜΟΣ (ή το κουμπί με το email σου).</li>
+  <li>Πάτα «Διαγραφή λογαριασμού» στο κάτω μέρος.</li>
+  <li>Γράψε <strong>ΔΙΑΓΡΑΦΗ</strong> και πάτα «ΑΝΤΙΓΡΑΦΟ ΚΑΙ ΔΙΑΓΡΑΦΗ».</li>
+</ol>
+<p>Πριν τη διαγραφή αποθηκεύεται αντίγραφο JSON στη συσκευή σου. Διαγράφονται
+<strong>αμέσως και μόνιμα</strong>: ο λογαριασμός (email, κωδικός), όλα τα δεδομένα
+στο σύννεφο, τα αντίγραφα ασφαλείας του διακομιστή και ο μετρητής χρήσης AI.
+Δεν κρατιέται τίποτα. Τα δεδομένα που βρίσκονται <em>πάνω στη συσκευή</em> δεν
+αγγίζονται· τα σβήνεις από ΡΥΘΜΙΣΕΙΣ → ΜΗΔΕΝΙΣΜΟΣ ή απεγκαθιστώντας την εφαρμογή.</p>
+<p><strong>Χωρίς την εφαρμογή:</strong> στείλε email από τη διεύθυνση του
+λογαριασμού σου στο <a href="mailto:phildiamondmusic@gmail.com?subject=Baseline%20-%20%CE%94%CE%B9%CE%B1%CE%B3%CF%81%CE%B1%CF%86%CE%AE%20%CE%BB%CE%BF%CE%B3%CE%B1%CF%81%CE%B9%CE%B1%CF%83%CE%BC%CE%BF%CF%8D">phildiamondmusic@gmail.com</a>
+με θέμα «Διαγραφή λογαριασμού». Η διαγραφή γίνεται εντός 30 ημερών και σου
+απαντάμε όταν ολοκληρωθεί.</p>
 
 <h2>Τα δικαιώματά σου (GDPR)</h2>
 <p>Πρόσβαση, διόρθωση, διαγραφή, φορητότητα και εναντίωση. Η εξαγωγή JSON
@@ -99,7 +111,7 @@ Email: <a href="mailto:phildiamondmusic@gmail.com">phildiamondmusic@gmail.com</a
 <div class="en">
 <h1>Baseline — Privacy Policy</h1>
 <div class="rule"></div>
-<p class="meta">Last updated: 19 September 2026</p>
+<p class="meta">Last updated: 22 September 2026</p>
 
 <p>Baseline is a nutrition tracking app. There are no ads, no tracking, and
 nothing is sold to third parties.</p>
@@ -123,9 +135,12 @@ your device.</p>
 <h2>AI features</h2>
 <p>When you write a meal in free text, that text is sent to
 <a href="https://www.anthropic.com/legal/privacy">Anthropic</a> (Claude) to turn
-it into foods and amounts. Only the meal text is sent — not your email, weight
-or history. Anthropic does not use it to train models. If you do not use that
-feature, nothing is sent.</p>
+it into foods and amounts. To make the estimate accurate, it is sent together
+with your profile (sex, age, height, weight, goal), today's meals, and the foods
+you logged in the last 30 days, so a food you have logged before gets your own
+values. <strong>Your email and any identifier are not sent.</strong> Anthropic
+does not use it to train models. If you do not use that feature, nothing is
+sent. For the daily usage limit, only a per-day request counter is kept.</p>
 
 <h2>Food search</h2>
 <p>Searching food databases sends only the search term to Open Food Facts, USDA
@@ -134,9 +149,21 @@ attached.</p>
 
 <h2>Retention and deletion</h2>
 <p>Data is kept while your account exists, with the last 50 saved versions
-retained so a bad merge can be undone. Delete locally via ΡΥΘΜΙΣΕΙΣ →
-ΜΗΔΕΝΙΣΜΟΣ, or email the address below with "Delete my account" — everything is
-removed within 30 days. Export your data any time via ΡΥΘΜΙΣΕΙΣ → ΕΞΑΓΩΓΗ JSON.</p>
+retained so a bad merge can be undone. Export your data any time via
+ΡΥΘΜΙΣΕΙΣ → ΕΞΑΓΩΓΗ JSON.</p>
+
+<h2 id="delete-en">Deleting your account</h2>
+<p><strong>In the app (immediate):</strong> ΡΥΘΜΙΣΕΙΣ → ΣΥΓΧΡΟΝΙΣΜΟΣ → "Διαγραφή
+λογαριασμού" (Delete account) → type <strong>ΔΙΑΓΡΑΦΗ</strong> → confirm. A JSON
+backup is saved to your device first. Your account (email, password), all cloud
+data, server-side backups and the AI usage counter are deleted
+<strong>immediately and permanently</strong>; nothing is retained. Data stored
+on the device itself is not touched — remove it via ΡΥΘΜΙΣΕΙΣ → ΜΗΔΕΝΙΣΜΟΣ or
+by uninstalling the app.</p>
+<p><strong>Without the app:</strong> email
+<a href="mailto:phildiamondmusic@gmail.com?subject=Baseline%20-%20Delete%20my%20account">phildiamondmusic@gmail.com</a>
+from your account's address with the subject "Delete my account". It is done
+within 30 days and we confirm by reply.</p>
 
 <h2>Your rights (GDPR)</h2>
 <p>Access, rectification, erasure, portability and objection. Contact:
